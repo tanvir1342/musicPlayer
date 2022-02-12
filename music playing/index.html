@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Music
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="navbarSection">
+            
+           <img src="sources/logo.png" class="navbar_icon" />
+           <ul class="navbar_ul">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">List</a></li>
+               <li><a href="#">Update</a></li>
+           </ul>
+           <div class="left_col">
+
+            <h1>Music is life,<br>enjoy<br>it !</h1>
+           </div>
+           <div class="right_col">
+
+                <p class="rSong" id="song1">Ai obelay tomari akase</p>
+                <p class="rSong" id="song2">oniket prantor</p>
+           </div>
+           <div class="playSong">
+            <h1 id="textp">song name</h1>
+        </div>
+
+        </div>
+        <audio id="songs_1">
+            <source src="sources/obelay.mp3" type="audio/mp3">
+        </audio>
+        <audio id="songs_2">
+            <source src="sources/oniket.mp3" type="audio/mp3">
+        </audio>
+        <script>
+            var songs_1 = document.getElementById("songs_1");
+            var song1 = document.getElementById("song1");
+            var songs_2 = document.getElementById("songs_2");
+            var song2 = document.getElementById("song2");
+            var textp = document.getElementById("textp");
+            
+            song1.onclick = function(){
+                if(songs_1.paused)
+                {
+                    songs_2.pause();
+                    songs_1.play();
+                    textp.innerHTML = song1.textContent;
+
+                }
+                else{
+
+                    songs_1.pause();
+                }
+                }
+                song2.onclick = function(){
+                if(songs_2.paused)
+                {
+                    songs_1.pause();
+                    songs_2.play();
+                    textp.innerHTML = song2.textContent;
+                }
+                else{
+
+                    songs_2.pause();
+                }
+                }
+                
+            
+        </script>
+    </body>
+    
+</html>

@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(241, 245, 239);
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbarSection{
+    width: 100%;
+    height: 980px;
+    background-color: white;
+    background:linear-gradient(rgba(255, 255, 0, 0.164),rgba(255, 255, 0, 0.164)),url(sources/hereo_img.jpg);
+    background-size: cover;
+    background-position:top;
+    
+    
+}
+
+.navbar_icon{
+    width: 100px;
+    height: 90px;
+    padding: 5px;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+.navbar_ul{
+    float: right;
+    margin-right: 50px;
+    margin-top: 35px;
+}
+.navbar_ul li{
+    display: inline-block;
+    
+    
+}
+.navbar_ul li a{
+    text-decoration: none;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    
+}
+.left_col
+{
+    width: 50%;
+    height: auto;
+}
+.left_col h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 55px;
+    color: white;
+    position: relative;
+    top: 200px;
+    left: 250px;
+    margin-right: 10px;
+
+    
+}
+.right_col
+{
+    width: 40%;
+    height: 300px;
+    background-color: rgb(122, 122, 115);
+    float: right;
+    margin-right: 60px;
+    margin-top: -50px;
+    border: 1 px solid;
+    border-radius: 10px;
+}
+.rSong{
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    
+}
+.rSong:hover{
+    border-bottom: 1px solid white;
+    
+}
+#song1{
+    cursor: pointer;
+}
+#song2{
+    cursor: pointer;
+}
+.playSong{
+    position:relative;
+    top: 350px;
+    left: 650px;
+    color: white;
+    border: 1px solid;
+    padding: 10px;
+    width: 400px;
+    text-align: center;
+}
+.playSong:hover{
+    background-color: rgb(14, 9, 0);
+}
